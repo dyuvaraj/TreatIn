@@ -1,0 +1,103 @@
+include mixins
+html
+  head
+    title TREATIN | Check in here for the best medical treatments
+    include head
+  body
+    .container
+      .well.well-lg
+        h3 Pagination
+        nav
+          ul.pagination
+            li.active
+              a(href="#", aria-label="Previous")
+                span(aria-hidden="true")&laquo;
+            - for (var x = 1; x < 5; x++)  
+              li
+                a(href="#")= x
+            li
+              a(href="#", aria-label="Next")
+                span(aria-hidden="true")&raquo;
+    .container
+      .well.well-lg
+        h3 Textbox
+        .form-group
+          label(for="TxtUsername") Username
+          input.form-control(type="text", id="TxtUsername", name="TxtUsername", placeholder="Username")
+        .form-group.form-inline
+          input.form-control(type="email", id="email", name="email", placeholder="E-mail")
+          label(for="TxtPassword") Password
+          input.form-control(type="password", id="TxtPassword", name="TxtPassword", placeholder="Password")      
+    .container
+      .well.well-lg
+        h3 Dropdown
+        .form-group
+          .dropdown
+            button.btn.btn-default.dropdown-toggle(type="button", id="dropdownMenu1", data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") Click me ! to drop
+              span.caret
+            ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+              li
+                a(href="#") You dropped me
+              li
+                a(href="#") You dropped me
+              li
+                a(href="#") You dropped me
+              li
+                a(href="#") You dropped me
+        .dropdown
+          .form-group
+            button.btn.btn-primary.dropdown-toggle(type="button", id="dropdownMenu2", data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") Click me ! to drop
+              span.caret
+            ul.dropdown-menu(aria-labelledby="dropdownMenu2")
+              li
+                a(href="#") You dropped me
+              li
+                a(href="#") You dropped me
+              li
+                a(href="#") You dropped me
+              li
+                a(href="#") You dropped me
+    .container
+      .well.well-lg
+        h3 Radio and Checkbox
+        .checkbox-inline       
+          input(type="checkbox", id="agree" , name="agree")
+          label(for="agree") Agree terms and conditions
+        .radio-inline       
+          input(type="radio", id="male" , name="gender")
+          label(for="male") Male
+    .container
+      .well.well-lg
+        h3 Buttons and Submit
+        button.btn.btn-default(type="submit") I am Login submit
+        button.btn.btn-default(type="button") I am Login button
+        button.btn.btn-default.btn-primary(type="button") I got some appearance
+    .container
+      .well.well-lg
+        h3 Tabs
+        ul.nav.nav-tabs
+          li.active(role="presentation")
+            a(href="#") Home
+          li(role="presentation")
+            a(href="#") Profile
+          li(role="presentation")
+            a(href="#") Messages
+    .container
+      .well.well-lg
+        h3 Alert
+        .alert.alert-success(role="alert") Hi..! I am for success
+        .alert.alert-info(role="alert") Hi..! I am for information
+        .alert.alert-warning(role="alert") Hi..! I am warning you
+        .alert.alert-danger(role="alert") Please stay away
+    .container
+      .well.well-lg
+        h3 Date Picker
+            .input-group.date#sandbox-container
+                .input-group-addon
+                    span.fa.fa-calendar(aria-hidden="true")
+                input.form-control(type="text", placeholder="Date of Birth")
+    .container
+      .well.well-lg
+        h3 File Upload
+            .custom-file-upload
+                input#files(type="file")/
