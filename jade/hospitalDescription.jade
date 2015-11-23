@@ -1,0 +1,428 @@
+include mixins
+html
+	head
+		title TREATIN | Check in here for the best medical treatments
+		include head
+	body(style="background: #eee")
+		//Navbar
+		+WheatherHome("No")
+		//End Navbar
+		
+		//Header Section		
+		header.container-fluid.HeaderSectionResult
+			.container-fluid.SearchHolder
+				.container
+					.col-md-5.col-md-offset-1
+						input.form-control.input-lg(type="text", placeholder="Enter Speciality name")
+					.col-md-3
+						input.form-control.input-lg(type="text", placeholder="Enter city/locality/pincode")
+					.col-md-2
+						button.btn.btn-default.btn-block(type="button") Search
+		//End Header Section
+		
+		//Breadcrumbs
+		.container
+			ol.breadcrumb
+				li
+					a(href="#") Home
+				li
+					a(href="#") Library
+				li.active
+					a(href="#") Data
+		//End Breadcrumbs
+		
+		//Hospital Details Body
+		section.container.HospitalDetailsBody
+			.col-md-9.HospitalDetailsComplete
+				.col-md-12.HospitalDetailsBodyHeader
+					.col-md-9
+						h4 Apollo Hospital
+						p
+							small
+								i.fa.fa-map-marker 
+								| No. 320, Anna Salai,Teynampet, Nandanam,Chennai 6100 035
+						p
+							small
+								i.fa.fa-envelope
+								| apollospeciality@apollohospitals.com
+							small
+								i.fa.fa-home
+								| www.apollohospitals.com
+							small
+								i.fa.fa-phone
+								| +91-44-2433 6119
+					.col-md-3
+							br/
+							button.btn.btn-block.btn-default Talk to Hospital
+							button.btn.btn-block.btn-default Save Hospital
+				.container.col-md-12(style="padding:0px").HospitalDetailButtonsScroll
+						- var ButtonsScroll = ['View Speciality', 'View Surgeon', 'Good to Know', 'Awards and Excellence']
+						- each item in ButtonsScroll
+							button.btn.btn-default.col-md-3(type="button")= item
+				.container.col-md-12
+					ul.nav.nav-tabs
+						li.active
+							a(data-toggle="tab", href="#HospitalDetailsCompleteAbout") About
+						li
+							a(data-toggle="tab", href="#HospitalDetailsCompleteFacilities") Facilities
+						li
+							a(data-toggle="tab", href="#HospitalDetailsCompleteBranches") Branches
+						li
+							a(data-toggle="tab", id="google-map-tab" href="#HospitalDetailsCompleteMapDirection") Map Direction
+						li
+							a(data-toggle="tab", href="#HospitalDetailsCompletePatientFeedback") Patient Feedback
+						li
+							a(data-toggle="tab", id="google-map-tab" href="#HospitalDetailsCompleteGallery") Gallery		
+					.tab-content
+						#HospitalDetailsCompleteAbout.tab-pane.fade.in.active
+							.col-md-12								
+								p Apollo Hospitals was the forerunner of integrated healthcare in Asia, as well as globally. Today, the group's futuristic vision has ensured that it has been in a position of strength at every touch point of the healthcare delivery chain. Its presence encompasses over 10,000 beds across 64 hospitals, more than 2200 pharmacies, over 100 primary care & diagnostic clinics, 115 telemedicine units across 9 countries, health insurance services, global projects consultancy, 15 academic institutions and a Research Foundation with a focus on global clinical trials, epidemiological studies, stem-cell and genetic research.
+								p Always pursuing Quality, our Hospital envisions more efficient, equitable care at all levels of a patient's experience. Through a consensus-based process, clinical quality and efficiency measures meets the needs and expectations of the general public, government, providers and practitioners.
+								//- .col-md-8
+								//- 	//- #slider.flexslider
+								//- 	//- 	ul.slides
+								//- 	//- 		li
+								//- 	//- 			img(src="images/1.jpg")/
+								//- 	//- 		li
+								//- 	//- 			img(src="images/2.jpg")/
+								//- 	//- 		li
+								//- 	//- 			img(src="images/3.jpg")/
+								//- 	//- 		li
+								//- 	//- 			img(src="images/4.jpg")/
+								//- 	//- #carousel.flexslider
+								//- 	//- 	ul.slides
+								//- 	//- 		li
+								//- 	//- 			img(src="images/1.jpg")/
+								//- 	//- 		li
+								//- 	//- 			img(src="images/2.jpg")/
+								//- 	//- 		li
+								//- 	//- 			img(src="images/3.jpg")/
+								//- 	//- 		li
+								//- 	//- 			img(src="images/4.jpg")/
+								//- 	.flexslider
+								//- 		.slides
+								//- 			li(data-thumb="images/1.jpg")
+								//- 				img(src="images/1.jpg")/
+								//- 			li(data-thumb="images/2.jpg")
+								//- 				img(src="images/2.jpg")/
+								//- 			li(data-thumb="images/3.jpg")
+								//- 				img(src="images/3.jpg")/
+								//- 			li(data-thumb="images/4.jpg")
+								//- 				img(src="images/4.jpg")/
+						#HospitalDetailsCompleteFacilities.tab-pane.fade
+							.col-md-12
+								.col-md-4
+									i.material-icons wifi
+									span Wifi
+								.col-md-4
+									i.material-icons directions_car
+									span Car Parking
+								.col-md-4
+									i.material-icons directions_bus
+									span Shuttle Bus Service
+								.col-md-4
+									i.material-icons restaurant_menu
+									span Restaurant
+								.col-md-4
+									i.material-icons face
+									span SPA
+								.col-md-4
+									i.material-icons accessibility
+									span Fitness Center
+						#HospitalDetailsCompleteBranches.tab-pane.fade
+							.col-md-12
+								- for (var x = 1; x < 5; x++)
+									.col-md-6
+										h3	Billroth Hospital
+										p 
+											span
+												+GroupStar("5", "Star")
+											strong 5 
+											| of 5 
+											small (234 reviews)
+										p
+											i.fa.fa-map-marker 
+											| 43, Lakshmi Talkies Road, Shenoy Nagar, Chennai- 30
+						
+						#HospitalDetailsCompleteMapDirection.tab-pane.fade
+							.col-md-12
+								h3	Map Direction
+								#map-canvas(style="width:100%; height:400px;")
+						#HospitalDetailsCompletePatientFeedback.tab-pane.fade
+							.col-md-12
+								.col-md-12
+									button.btn.btn-default(type="button") Write Review
+								- for (var y = 0; y < 3; y++)
+									.col-md-12.PatientFeedback
+										.media
+											.media-left
+												a(href="#")
+													img.media-object(src="images/dr.png", alt="")
+											.media-body
+												h4.media-heading
+													a(href="#") Yuvaraj D
+													span Palm Beach, FL
+														small (240 reviews)
+												p
+													+GroupStar("5", "Star")
+												p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+												p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+												.col-md-12
+													- var SummaryRatings = ['Sleep', 'Clearness', 'Location', 'Rooms', 'Service']
+													- each item in SummaryRatings
+														.col-md-6
+															.col-md-4= item
+															.col-md-4
+																+GroupStar("5", "Smiley")
+								.col-md-12
+									button.btn.btn-default(type="button") Write Review
+						#HospitalDetailsCompleteGallery.tab-pane.fade
+							.col-md-12
+								.flexslider
+									.slides
+										li(data-thumb="images/1.jpg")
+											img(src="images/1.jpg")/
+										li(data-thumb="images/2.jpg")
+											img(src="images/2.jpg")/
+										li(data-thumb="images/3.jpg")
+											img(src="images/3.jpg")/
+										li(data-thumb="images/4.jpg")
+											img(src="images/4.jpg")/
+				.col-md-12.ViewSpeciality
+					.col-md-12
+						h4 View Speciality
+						- var Speciality = ['General Medicine', 'Tramacare', 'General Surgery', 'Cardiology', 'Urology', 'Orthopaedics', 'ENT', 'Gastroenterology', 'Neurology']
+						- var Speciality2 = ['General Medicine', 'Tramacare', 'General Surgery', 'Cardiology', 'Urology', 'Orthopaedics', 'ENT', 'Gastroenterology', 'Neurology']
+						- each item in Speciality
+							.col-md-3
+								h5 
+									a(data-toggle="popover" data-html="true" data-content="General Medicine<br/>Tramacare<br/>General Surgery<br/>Cardiology<br/>Urology<br/>Orthopaedics<br/>ENT<br/>Gastroenterology<br/>Neurology")
+										i.fa.fa-caret-right
+										span= item
+				.col-md-12.ViewSurgeons
+					.col-md-12
+						h4 View Surgeons
+						- var Surgeons = ['Dr.Saravanan', 'Dr.Ramesh', 'Dr.Prakash', 'Dr.Mohan']
+						- each item in Surgeons
+							.col-md-3.DoctorProfileHolder
+								.thumbnail
+									img.img-circle(src="images/dr.png", alt="")/
+									.caption
+										h5
+											strong= item
+										p
+											small M.B.B.S - 23yr Exp
+										p
+											small Anchor Family Medicine
+										p
+											a.btn.btn-primary(href="#", role="button") View Profile
+				.col-md-12
+					.col-md-12
+						h4 Good to Know
+						h5 Value Added Services
+						- ValueAddedService = ["Apollo eDoc", "Apollo Sugar Clinic", "Apollo Telemedicine", "Virtual ICU Visit", "Apollo Lifeline", "Sunshine Store", "Apollo - Aircel Mobile Health Care", "B Positive", "Apollo WHITE Dental Spa", "The Healing Card", "Blood Connections", "Apollo Prism"]
+						ul
+							each item in ValueAddedService							
+								li= item
+				.col-md-12
+					.col-md-12
+						h4 Awards & Accolades
+						.col-md-12
+							h4.well Group Award
+							ul
+								- var GroupAward = ['Hospital Management Asia Awards','I.C.O.N.I.C IDC Insights Award','The Week-Nielsen Hospital Award 2013','SKOCH order of Merit Award','All India Management Association','Asian Learning and Development Leadership Award','CMO Asia Award','Golden Peacock Occupational Health & Safety Award','Gallup Great Workplace Award','International Medical Tourism Award 2014','ISO Certification','Asia HRD Awards 2013','Apollo Health Insurance Munich Awards','IT Excellence','Child Magazine Award','Best Medical Tourism India Award','ICICI Lombard & CNBC TV18 India Healthcare Awards','Best Hospitals in India - Survey 2012 by \"The Week\" Magazine','Enterprise Asias AREA Program, South Asia 2012 - \"Health Promotion\" Award','Porter Prize \"Institute for Competitiveness\" Mini Strategy Award']
+									each item in GroupAward
+										li.col-md-6= item
+						.col-md-12
+							h4.well Group Award
+							ul
+								- var GroupAward = ['Hospital Management Asia Awards','I.C.O.N.I.C IDC Insights Award','The Week-Nielsen Hospital Award 2013','SKOCH order of Merit Award','All India Management Association','Asian Learning and Development Leadership Award','CMO Asia Award','Golden Peacock Occupational Health & Safety Award','Gallup Great Workplace Award','International Medical Tourism Award 2014','ISO Certification','Asia HRD Awards 2013','Apollo Health Insurance Munich Awards','IT Excellence','Child Magazine Award','Best Medical Tourism India Award','ICICI Lombard & CNBC TV18 India Healthcare Awards','Best Hospitals in India - Survey 2012 by \"The Week\" Magazine','Enterprise Asias AREA Program, South Asia 2012 - \"Health Promotion\" Award','Porter Prize \"Institute for Competitiveness\" Mini Strategy Award']
+									each item in GroupAward
+										li.col-md-6= item
+						
+				.col-md-12
+					.col-md-12
+						h4 Write a Review
+						.col-md-8
+							.form-group
+								label(for="TxtUsername") Review Title
+								input.form-control(type="text", id="TxtUsername", name="TxtUsername", placeholder="Username")
+							.form-group
+							label(for="TxtReview") Review Text
+							textarea.form-control(rows="3", id="TxtReview", placeholder="Write your review")
+							.form-group
+							button.btn.btn-default.btn-primary(type="button") Submit Review
+						.col-md-4
+							.col-md-12
+								h5
+									strong Ratings
+							.col-md-12
+								.col-md-6 Services
+								.col-md-6
+									+GroupStar("5", "Smiley")
+							.col-md-12
+								.col-md-6 Accomadation
+								.col-md-6
+									+GroupStar("1", "Smiley")
+							.col-md-12
+								.col-md-6 Cleanlines
+								.col-md-6
+									+GroupStar("4", "Smiley")
+							.col-md-12
+								.col-md-6 Maintenance
+								.col-md-6
+									+GroupStar("3", "Smiley")
+							.col-md-12
+								.col-md-6 Services
+								.col-md-6
+									+GroupStar("5", "Smiley")
+							.col-md-12
+								.col-md-6 Accomadation
+								.col-md-6
+									+GroupStar("1", "Smiley")
+							.col-md-12
+								.col-md-6 Cleanlines
+								.col-md-6
+									+GroupStar("4", "Smiley")
+							.col-md-12
+								.col-md-6 Maintenance
+								.col-md-6
+									+GroupStar("3", "Smiley")
+							.col-md-12
+			//Sidebar
+			.col-md-3.SidebarResult
+				//Sidebar List Result
+				.container.col-md-12.SidebarListResultWithBorder.HospitalDetailsCompleteRatings
+					button.btn.btn-primary.btn-block Write Review
+					h3 
+						strong Exceptional!
+					h4 97%
+						small of guests recommend
+					p
+						+GroupStar("5", "Star")
+						span
+							b  4.7
+							| of 5 
+							small guest rating
+					p
+						small based on 1234 reviews
+				.container.col-md-12.SidebarListResultWithBorder.HospitalDetailsCompletePatientRatings
+					h5 
+						strong Patient Rating
+					.col-md-12
+						.col-md-3 
+							small Excellent 
+						.col-md-7.RatingBar 
+							.RatingBarFull(style="width:91%;") &nbsp;
+						.col-md-2 
+							small 1254
+					.col-md-12
+						.col-md-3 
+							small Good 
+						.col-md-7.RatingBar 
+							.RatingBarFull(style="width:60%;") &nbsp;
+						.col-md-2
+							small 242
+					.col-md-12
+						.col-md-3 
+							small Average 
+						.col-md-7.RatingBar 
+							.RatingBarFull(style="width:40%;") &nbsp;
+						.col-md-2 
+							small 89
+					.col-md-12
+						.col-md-3 
+							small Poor 
+						.col-md-7.RatingBar 
+							.RatingBarFull(style="width:10%;") &nbsp;
+						.col-md-2 
+							small 20
+				.container.col-md-12.SidebarListResultWithBorder.HospitalDetailsCompleteSummary
+					h5 
+						strong Summary
+					.col-md-12
+						.col-md-6 Safety
+						.col-md-6
+							+GroupStar("5", "Smiley")
+					.col-md-12
+						.col-md-6 Clinical Quality
+						.col-md-6
+							+GroupStar("5", "Smiley")
+					.col-md-12
+						.col-md-6 Doctor Response
+						.col-md-6
+							+GroupStar("5", "Smiley")
+					.col-md-12
+						.col-md-6 Staff Response
+						.col-md-6
+							+GroupStar("5", "Smiley")
+					.col-md-12
+						.col-md-6 Staff Knowledge
+						.col-md-6
+							+GroupStar("5", "Smiley")
+					.col-md-12
+						.col-md-6 Cleanliness
+						.col-md-6
+							+GroupStar("5", "Smiley")
+					.col-md-12
+						.col-md-6 Timely care
+						.col-md-6
+							+GroupStar("5", "Smiley")
+					.col-md-12
+						.col-md-6 Effective care
+						.col-md-6
+							+GroupStar("5", "Smiley")
+							
+				.container.col-md-12.SidebarListResult
+					h4 Compare Hospitals
+					- for (var x = 0; x < 3; x++)
+						.col-md-12.CompareHospitalsBlock						
+							.col-md-4
+								img.img-responsive(src="images/apollo-hospital.jpg")
+							.col-md-8
+								h5  Apollo Hospital
+								p
+									+GroupStar("5", "Star")
+					.col-md-12.CompareHospitalsBlock
+						button.btn.btn-default.btn-block Compare Now
+				.container.col-md-12.SidebarListResultWithBorder
+					h5 
+						strong WHY USE TREATIN !
+					.col-md-12
+						p
+							+GroupStar("1", "Star")
+							| Best Price Guaranteed
+						span Low rates
+					.col-md-12
+						p
+							+GroupStar("1", "Star")
+							| Verified reviews
+						span We verify all reviews
+					.col-md-12
+						p
+							+GroupStar("1", "Star")
+							| Make changes to your
+						span We verify all reviews
+
+				.container.col-md-12.SidebarListResultWithBorder
+					h5 
+						strong Support Services !
+					.col-md-12
+						p
+							a FIND HEALTH CARE FACILITATOR
+						p
+							a FIND SERVICED APARTMENTS
+						p
+							a FIND LOCAL TRAVEL / TAXI SERVICE
+						p
+							a HOME HEALTHCARE SERVICES
+						p
+							a FIND LOCAL TRANSLATOR SERVICES
+						p
+							a FIND HOLIDAY & TOURIST SERVICES
+							
+					
+				//End Sidebar List Result
+		//End Hospital Details Body
+		script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false")
+		include footer

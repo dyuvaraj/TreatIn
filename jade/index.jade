@@ -1,0 +1,98 @@
+include mixins
+html
+	head
+		title TREATIN | Check in here for the best medical treatment
+		include head
+	body
+		//Navbar
+		+WheatherHome("Yes")
+		//End Navbar
+		//Header Section
+		header.container-fluid.HeaderSection
+			.container
+				h1 Welcome to TreatIn
+				span.col-md-2.col-md-offset-5.col-xs-2.col-xs-offset-5
+				p.col-md-5.col-xs-5
+				p Find Best Treatments from 500+ Hospitals Worldwide
+				button.btn.btn-default.specialBtn(type="button") List your Hospitals
+				p Beat the traffic jams and clinic queues.
+				h3 Consult the best doctors from your home.
+			.container-fluid.SearchHolder
+				.container
+					.col-md-5.col-md-offset-1
+						input.form-control.input-lg(type="text", placeholder="Enter Speciality name")
+					.col-md-3
+						input.form-control.input-lg(type="text", placeholder="Enter city/locality/pincode")
+					.col-md-2
+						button.btn.btn-default.btn-block(type="button") Search
+		//End Header Section
+
+		//How it Works Section
+		//.container-fluid.HeadingsWithBackground
+			
+		Section.container-fluid.HowItWorks
+			h3 How It Works
+			.container
+
+				.col-md-2.col-md-offset-1.col-xs-8
+					span.pe-7s-culture
+					p Find Hospital
+					p Search from thousands of Hospitals offering their
+				+HowItWorks('pe-7s-graph3', 'Compare Hospital', 'Search from thousands of Hospitals offering their')
+				+HowItWorks('pe-7s-plane', 'Find Hospital', 'Search from thousands of Hospitals offering their')
+				+HowItWorks('pe-7s-note2', 'Book Tickets', 'Search from thousands of Hospitals offering their')
+				+HowItWorks('pe-7s-culture', 'Find Hospital', 'Search from thousands of Hospitals offering their')
+		//End How it Works Section
+
+		// Top Specialities Section
+		//.container-fluid.Headings
+		
+		Section.container-fluid.TopSpecialities
+			h3 Top Specialities
+			.container
+				+TopSpecialityList('images/special/1.png', 'LIVER TRANSPLANT')
+				+TopSpecialityList('images/special/2.png', 'CANCER TREATMENT')
+				+TopSpecialityList('images/special/3.png', 'CARDIOVASCULAR')
+				+TopSpecialityList('images/special/4.png', 'ORTHOPEDIC')
+				+TopSpecialityList('images/special/5.png', 'COSMETIC SURGERY')
+				+TopSpecialityList('images/special/6.png', 'FERTILITY TREATMENT')
+				+TopSpecialityList('images/special/7.png', 'DENTAL TREATMENT')
+				+TopSpecialityList('images/special/8.png', 'NEUROSURGERY')
+				+TopSpecialityList('images/special/9.png', 'GASTROENTEROLOGY')
+				+TopSpecialityList('images/special/10.png', 'OPHTHALMOLOGY')
+				+TopSpecialityList('images/special/11.png', 'ENT TREATMENT')
+				+TopSpecialityList('images/special/12.png', 'ROBOTIC SURGERY')
+		// End Top Specialities Section
+
+		// Top Destination
+		//.container-fluid.HeadingsWithBackground
+		
+		Section.container-fluid.TopDestination
+			h3	Top Destination
+			.container
+				+TopDestinationList('images/country/india.png', 'INDIA')
+				+TopDestinationList('images/country/canada.png', 'Canada')
+				+TopDestinationList('images/country/costanica.png', 'Costanica')
+				+TopDestinationList('images/country/czech.png', 'Czech')
+				+TopDestinationList('images/country/germany.png', 'Germany')
+				+TopDestinationList('images/country/malaysia.png', 'Malaysia')
+				+TopDestinationList('images/country/poland.png', 'Poland')
+				+TopDestinationList('images/country/singapore.png', 'Singapore')
+				+TopDestinationList('images/country/southkorea.png', 'South korea')
+				+TopDestinationList('images/country/thailand.png', 'Thailand')
+				+TopDestinationList('images/country/uk.png', 'UK')
+				+TopDestinationList('images/country/usa.png', 'USA')
+		// End Top Destinations
+
+		// Support Services
+		//.container-fluid.Headings
+			
+		Section.container.SupportServices
+			h3 Support Services
+			+SuportServicesList('images/facilitator.png', 'Facilitator', 'Find Healthcare Facilitator', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.')
+			+SuportServicesList('images/healthcareservices.png', 'Health Care Service', 'Find Healthcare Facilitator', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard.')
+			+SuportServicesList('images/serviceapp.png', 'Accomadation', 'Find Healthcare Facilitator', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.')
+			+SuportServicesList('images/tour.png', 'Tour', 'Find Healthcare Facilitator', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard.')
+		//End Support Services
+
+		include footer

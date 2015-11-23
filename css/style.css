@@ -1,0 +1,1455 @@
+@charset "UTF-8";
+/* Colors */
+/* Website Colors */
+/* Animations */
+/* line 22, ../sass/style.sass */
+.animate, .TopSpecialities .col-md-2 .OverlayDiv {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+/* line 29, ../sass/style.sass */
+.animateFaster, input[type="button"], button, .navbar-default .navbar-nav li:hover, .HowItWorks div .col-md-2, .HowItWorks div .col-md-2:hover > span {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* End Animations */
+/* Bootstrap Components */
+/* line 38, ../sass/style.sass */
+.container, .container-fluid {
+  padding: 0px;
+}
+
+/* line 40, ../sass/style.sass */
+.btn, .dropdown-menu {
+  border-radius: 0;
+}
+
+/* line 45, ../sass/style.sass */
+input[type="text"]:hover, input[type="button"]:hover {
+  box-shadow: none !important;
+  outline: 0 none;
+}
+
+/* line 48, ../sass/style.sass */
+input[type="text"]:focus, input[type="button"]:focus {
+  box-shadow: none !important;
+  outline: 0 none;
+}
+
+/* line 52, ../sass/style.sass */
+.custom-file-upload-hidden {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+/* line 57, ../sass/style.sass */
+.custom-file-upload {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  margin-top: 30px;
+}
+/* line 62, ../sass/style.sass */
+.custom-file-upload label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 65, ../sass/style.sass */
+.file-upload-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/* line 68, ../sass/style.sass */
+.file-upload-input {
+  width: 300px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 17px;
+  border: none;
+  background-color: #FF766C;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  float: left;
+}
+/* line 77, ../sass/style.sass */
+.file-upload-input:hover, .file-upload-input:focus {
+  background-color: #ff5e53;
+  outline: none;
+}
+
+/* line 80, ../sass/style.sass */
+.file-upload-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 11px 20px;
+  border: none;
+  margin-left: -1px;
+  background-color: #ff4639;
+  float: left;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 92, ../sass/style.sass */
+.file-upload-button:hover {
+  background-color: #ff1706;
+}
+
+/* line 95, ../sass/style.sass */
+.popover-title {
+  font-size: 12px;
+  background: transparent;
+}
+
+/* line 98, ../sass/style.sass */
+.popover-content {
+  font-size: 12px;
+}
+
+/* Radio and Checkbox */
+/* line 103, ../sass/style.sass */
+.checkbox-inline input[type="checkbox"], .radio-inline input[type="radio"] {
+  display: none;
+}
+
+/* line 105, ../sass/style.sass */
+.checkbox-inline input[type="checkbox"]:checked ~ label:before, .radio-inline input[type="radio"]:checked ~ label:before {
+  font-size: 12px;
+  content: "";
+  font-family: "FontAwesome";
+  text-align: center;
+  background-color: #FF766C;
+  color: #FFFFFF;
+  border: 1px solid #FF766C;
+}
+
+/* line 114, ../sass/style.sass */
+.checkbox-inline input[type="checkbox"]:hover ~ label:before, .radio-inline input[type="radio"]:hover ~ label:before {
+  border: 1px solid #FF766C;
+}
+
+/* line 116, ../sass/style.sass */
+.checkbox-inline label, .radio-inline label {
+  position: relative;
+  line-height: 30px;
+  font-family: "Open sans";
+  font-weight: normal;
+  padding-left: 30px;
+  margin: 0;
+  min-width: 18px;
+  min-height: 21px;
+  cursor: pointer;
+}
+
+/* line 126, ../sass/style.sass */
+.checkbox-inline label:hover, .radio-inline label:hover {
+  color: #333333;
+}
+
+/* line 128, ../sass/style.sass */
+.checkbox-inline label:before, .radio-inline label:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  line-height: 18px;
+  left: 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+/* line 138, ../sass/style.sass */
+.radio-inline label:before {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border-radius: 100%;
+}
+
+/* End Bootstrap Components */
+/* Elements */
+/* line 147, ../sass/style.sass */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/* End Elements */
+/* Navbar */
+/* line 153, ../sass/style.sass */
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: transparent;
+  border: 2px;
+}
+/* line 160, ../sass/style.sass */
+.navbar-default .navbar-nav li a {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 167, ../sass/style.sass */
+.navbar-default .navbar-nav li a i {
+  font-size: 26px;
+}
+/* line 169, ../sass/style.sass */
+.navbar-default .navbar-nav li a p {
+  margin-bottom: 0;
+}
+/* line 171, ../sass/style.sass */
+.navbar-default .navbar-nav li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 173, ../sass/style.sass */
+.navbar-default .navbar-nav li:hover {
+  /*border-bottom: 2px solid $White */
+}
+
+/* line 177, ../sass/style.sass */
+.navbar-brand {
+  padding: 10px 15px;
+}
+/* line 179, ../sass/style.sass */
+.navbar-brand text {
+  fill: white;
+}
+/* line 182, ../sass/style.sass */
+.navbar-brand:hover text {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+/* End Navbar */
+/* line 191, ../sass/style.sass */
+.Headings {
+  font-size: 20px;
+  color: #333333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* line 196, ../sass/style.sass */
+.HeadingsWithBackground {
+  font-size: 20px;
+  color: #333333;
+  background: #E6E6E6;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Header */
+/* line 233, ../sass/style.sass */
+.HeaderSection {
+  background-image: url(../images/bac.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: -1;
+}
+
+/* line 249, ../sass/style.sass */
+.HeaderSection h1 {
+  text-transform: uppercase;
+  padding-top: 60px;
+  font-size: 40px;
+  font-weight: 300;
+}
+/* line 254, ../sass/style.sass */
+.HeaderSection span {
+  border-bottom: 1px solid #FFFFFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 256, ../sass/style.sass */
+.HeaderSection p {
+  padding: 10px 0;
+}
+/* line 214, ../sass/style.sass */
+.HeaderSection .btn-default {
+  background: #FF766C;
+  border: transparent;
+  padding: 9px 30px;
+  color: #FFFFFF;
+}
+/* line 219, ../sass/style.sass */
+.HeaderSection .btn-default:hover {
+  color: #FFFFFF;
+  background: rgba(255, 118, 108, 0.8);
+}
+/* line 222, ../sass/style.sass */
+.HeaderSection .SearchHolder {
+  background: rgba(255, 255, 255, 0);
+  padding: 10px 0;
+}
+/* line 225, ../sass/style.sass */
+.HeaderSection .SearchHolder .input-lg {
+  border-radius: 0;
+  height: 38px;
+  font-size: 14px;
+}
+/* line 229, ../sass/style.sass */
+.HeaderSection .SearchHolder [class^="col-md"] {
+  padding: 0;
+  padding-bottom: 5px;
+}
+/* line 259, ../sass/style.sass */
+.HeaderSection h3 {
+  margin-bottom: 50px;
+}
+
+/* line 261, ../sass/style.sass */
+.specialBtn {
+  background-color: #FF766C !important;
+  border: 1px solid #FF766C !important;
+}
+/* line 264, ../sass/style.sass */
+.specialBtn:hover {
+  background-color: transparent !important;
+  border: 1px solid #FFFFFF !important;
+}
+
+/* End Header */
+/* How it Works Section */
+/* line 276, ../sass/style.sass */
+.HowItWorks {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #E6E6E6;
+}
+/* line 280, ../sass/style.sass */
+.HowItWorks h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+/* line 283, ../sass/style.sass */
+.HowItWorks div .col-md-2 {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #E6E6E6;
+}
+/* line 289, ../sass/style.sass */
+.HowItWorks div .col-md-2 span {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+/* line 292, ../sass/style.sass */
+.HowItWorks div .col-md-2:hover {
+  border-bottom: 1px solid #333333;
+}
+/* line 294, ../sass/style.sass */
+.HowItWorks div .col-md-2:hover > span {
+  transform: scale(1.5);
+}
+
+/* End How it Works Section */
+/* Top Specialities */
+/* line 302, ../sass/style.sass */
+.TopSpecialities {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  /**padding-bottom: 20px */
+}
+/* line 306, ../sass/style.sass */
+.TopSpecialities h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+/* line 308, ../sass/style.sass */
+.TopSpecialities .col-md-2 {
+  padding: 0;
+  cursor: pointer;
+}
+/* line 311, ../sass/style.sass */
+.TopSpecialities .col-md-2 .OverlayDiv {
+  background-color: rgba(0, 0, 0, 0.6);
+  /*border: 10px solid rgba($White, 1) */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+/* line 319, ../sass/style.sass */
+.TopSpecialities .col-md-2 .OverlayDiv p {
+  color: white;
+  text-align: center;
+  margin-top: 25%;
+  font-size: 85%;
+}
+/* line 324, ../sass/style.sass */
+.TopSpecialities .col-md-2 .OverlayDiv:hover {
+  background-color: rgba(255, 118, 108, 0);
+}
+/* line 326, ../sass/style.sass */
+.TopSpecialities .col-md-2 .OverlayDiv:hover p {
+  color: rgba(255, 255, 255, 0);
+}
+
+/* End Top Specialities */
+/* Top Destinetion */
+/* line 331, ../sass/style.sass */
+.TopDestination {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #E6E6E6;
+}
+/* line 335, ../sass/style.sass */
+.TopDestination h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+/* line 337, ../sass/style.sass */
+.TopDestination .col-md-2 {
+  /*padding: 0 */
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+/* line 341, ../sass/style.sass */
+.TopDestination .col-md-2 p {
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+
+/* End Top Destinetion */
+/* Support Services */
+/* line 349, ../sass/style.sass */
+.SupportServices {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+/* line 352, ../sass/style.sass */
+.SupportServices h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+/* line 354, ../sass/style.sass */
+.SupportServices .infoCard {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* line 361, ../sass/style.sass */
+.SupportServices .infoCard img {
+  width: 100%;
+  margin-bottom: 90px;
+}
+/* line 364, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails, .SupportServices .infoCard .infoCardDetails .infoCardHeader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  padding: 0 10px;
+  background: #FFFFFF;
+  text-align: center;
+}
+/* line 373, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails::-webkit-scrollbar, .SupportServices .infoCard .infoCardDetails .infoCardHeader::-webkit-scrollbar {
+  width: 8px;
+}
+/* line 375, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails::-webkit-scrollbar-button, .SupportServices .infoCard .infoCardDetails .infoCardHeader::-webkit-scrollbar-button {
+  width: 8px;
+  height: 0px;
+}
+/* line 378, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails::-webkit-scrollbar-track, .SupportServices .infoCard .infoCardDetails .infoCardHeader::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* line 380, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails::-webkit-scrollbar-thumb, .SupportServices .infoCard .infoCardDetails .infoCardHeader::-webkit-scrollbar-thumb {
+  background: #a0a0a0;
+}
+/* line 382, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails::-webkit-scrollbar-thumb:hover, .SupportServices .infoCard .infoCardDetails .infoCardHeader::-webkit-scrollbar-thumb:hover {
+  background: #828282;
+}
+/* line 384, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails .infoCardHeader {
+  height: auto;
+  bottom: 100%;
+  padding: 10px 5px;
+  font-size: 12px;
+}
+/* line 390, ../sass/style.sass */
+.SupportServices .infoCard .infoCardDetails .infoCardHeader h5 {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+/* line 396, ../sass/style.sass */
+.SupportServices .infoCard:hover .infoCardDetails, .SupportServices .infoCard:hover .infoCardDetails .infoCardHeader {
+  bottom: 0px;
+  overflow: auto;
+  padding-bottom: 25px;
+}
+/* line 400, ../sass/style.sass */
+.SupportServices .infoCard:hover .infoCardDetails .infoCardHeader {
+  position: relative;
+  bottom: 0px;
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+
+/* End Support Services */
+/* Footer */
+/* line 408, ../sass/style.sass */
+footer {
+  background: #333333;
+}
+/* line 410, ../sass/style.sass */
+footer .FooterHeadings {
+  color: #FFFFFF;
+}
+/* line 412, ../sass/style.sass */
+footer .FooterHeadings span {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* line 415, ../sass/style.sass */
+footer .container {
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+/* line 419, ../sass/style.sass */
+footer .container ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 422, ../sass/style.sass */
+footer .container ul li {
+  margin-bottom: 3px;
+}
+/* line 424, ../sass/style.sass */
+footer .container ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+/* line 428, ../sass/style.sass */
+footer .container ul li a:hover {
+  color: #FF766C;
+  text-decoration: none;
+}
+/* line 431, ../sass/style.sass */
+footer address {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+}
+/* line 435, ../sass/style.sass */
+footer address p {
+  padding: 0;
+  padding-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+/* line 442, ../sass/style.sass */
+footer ul.social li {
+  list-style: none;
+  display: inline;
+  float: left;
+  margin-right: 2px;
+}
+/* line 447, ../sass/style.sass */
+footer ul.social li a {
+  padding: 10px 10px;
+  background-color: #FF766C;
+  color: white;
+  cursor: pointer;
+}
+/* line 453, ../sass/style.sass */
+footer ul.social li a:hover {
+  background-color: rgba(255, 118, 108, 0.5);
+}
+
+/* line 455, ../sass/style.sass */
+.FooterLogo {
+  cursor: pointer;
+}
+/* line 457, ../sass/style.sass */
+.FooterLogo text {
+  fill: #e6e6e6;
+}
+/* line 460, ../sass/style.sass */
+.FooterLogo:hover text {
+  fill: rgba(230, 230, 230, 0.8);
+}
+
+/* End Footer */
+/* Result Page */
+/* Header Section Result Page */
+/* line 466, ../sass/style.sass */
+.nav2 {
+  background: #ff766c !important;
+}
+
+/* line 468, ../sass/style.sass */
+.HeaderSectionResult {
+  margin-top: 56px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 214, ../sass/style.sass */
+.HeaderSectionResult .btn-default {
+  background: #4d4d4d;
+  border: transparent;
+  padding: 9px 30px;
+  color: #FFFFFF;
+}
+/* line 219, ../sass/style.sass */
+.HeaderSectionResult .btn-default:hover {
+  color: #FFFFFF;
+  background: rgba(77, 77, 77, 0.8);
+}
+/* line 222, ../sass/style.sass */
+.HeaderSectionResult .SearchHolder {
+  background: #e6e6e6;
+  padding: 10px 0;
+}
+/* line 225, ../sass/style.sass */
+.HeaderSectionResult .SearchHolder .input-lg {
+  border-radius: 0;
+  height: 38px;
+  font-size: 14px;
+}
+/* line 229, ../sass/style.sass */
+.HeaderSectionResult .SearchHolder [class^="col-md"] {
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+/* End Header Section Result Page */
+/* Breadcrumbs */
+/* line 475, ../sass/style.sass */
+.breadcrumb {
+  padding: 0;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 481, ../sass/style.sass */
+.breadcrumb li {
+  font-size: 12px;
+}
+/* line 483, ../sass/style.sass */
+.breadcrumb li a {
+  color: rgba(255, 118, 108, 0.6);
+}
+/* line 485, ../sass/style.sass */
+.breadcrumb li a:hover {
+  text-decoration: none;
+  color: #FF766C;
+}
+/* line 489, ../sass/style.sass */
+.breadcrumb li.active a {
+  color: #FF766C;
+}
+/* line 491, ../sass/style.sass */
+.breadcrumb li.active a:hover {
+  text-decoration: underline;
+}
+
+/* End Breadcrumbs */
+/* Search Filters */
+/* line 497, ../sass/style.sass */
+.SearchFilters [class^="col-md"] {
+  padding: 0;
+}
+/* line 499, ../sass/style.sass */
+.SearchFilters .col-md-3 {
+  background-color: #FF766C;
+  color: #FFFFFF;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid #FF766C;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 508, ../sass/style.sass */
+.SearchFilters .col-md-9 {
+  border: 1px solid white;
+  color: #FF766C;
+}
+/* line 511, ../sass/style.sass */
+.SearchFilters button {
+  border: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 515, ../sass/style.sass */
+.SearchFilters button:hover {
+  background-color: #FF766C;
+  color: #FFFFFF;
+}
+/* line 518, ../sass/style.sass */
+.SearchFilters button i {
+  margin-right: 5px;
+}
+/* line 522, ../sass/style.sass */
+.SearchFilters ul li {
+  text-align: left;
+}
+/* line 524, ../sass/style.sass */
+.SearchFilters span {
+  margin-left: 10px !important;
+}
+
+/* line 526, ../sass/style.sass */
+.SearchFiltersGroupStars {
+  display: list-item;
+  font-size: 12px;
+}
+
+/* End Search Filters */
+/* Search Result */
+/* line 532, ../sass/style.sass */
+.SearchResult [class^="col-md"] {
+  padding: 0;
+}
+
+/* line 536, ../sass/style.sass */
+.SearchResult h3 {
+  margin: 20px 0;
+}
+
+/* End Search Result */
+/* Sorting */
+/* line 541, ../sass/style.sass */
+.HospitalSort {
+  top: 16px;
+  text-align: right;
+}
+
+/* line 548, ../sass/style.sass */
+.SortingHospitals {
+  margin-bottom: 5px;
+}
+/* line 550, ../sass/style.sass */
+.SortingHospitals [class^="col-md"] {
+  padding: 0;
+}
+/* line 552, ../sass/style.sass */
+.SortingHospitals i {
+  margin-left: 10px !important;
+}
+/* line 555, ../sass/style.sass */
+.SortingHospitals button:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+/* line 557, ../sass/style.sass */
+.SortingHospitals button.active {
+  border: 1px solid #FFFFFF;
+  border-bottom: 2px solid #ff766c;
+  color: #FF766C;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* End Sorting */
+/* Hospital List */
+/* line 568, ../sass/style.sass */
+.HospitalListing {
+  background: #FFFFFF;
+  padding: 0;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+}
+/* line 573, ../sass/style.sass */
+.HospitalListing:hover {
+  border-color: rgba(255, 118, 108, 0.3);
+}
+/* line 575, ../sass/style.sass */
+.HospitalListing:hover .HospitalQuickviewS {
+  display: block;
+  left: 20%;
+}
+/* line 578, ../sass/style.sass */
+.HospitalListing:hover .HospitalQuickviewC {
+  display: block;
+  left: 60%;
+}
+/* line 581, ../sass/style.sass */
+.HospitalListing:hover .HospitalListOverlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 583, ../sass/style.sass */
+.HospitalImage {
+  padding-left: 0;
+}
+/* line 585, ../sass/style.sass */
+.HospitalImage p {
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 5px 0;
+  margin: 0;
+}
+
+/* line 591, ../sass/style.sass */
+.HospitalListOverlay {
+  height: 150px;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+/* line 598, ../sass/style.sass */
+.HospitalQuickview, .HospitalQuickviewS, .HospitalQuickviewC {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background: #333333;
+  top: 35%;
+  left: 40%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+}
+/* line 609, ../sass/style.sass */
+.HospitalQuickview:hover, .HospitalQuickviewS:hover, .HospitalQuickviewC:hover {
+  background: #FF766C;
+}
+/* line 611, ../sass/style.sass */
+.HospitalQuickview span, .HospitalQuickviewS span, .HospitalQuickviewC span {
+  color: #FFFFFF;
+  top: 8px;
+}
+
+/* line 614, ../sass/style.sass */
+.HospitalSave {
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  font-size: 18px;
+  padding: 5px 0 5px 5px;
+  position: absolute;
+  bottom: 30px;
+  padding: 5px;
+  top: 0;
+}
+/* line 624, ../sass/style.sass */
+.HospitalSave span {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* line 627, ../sass/style.sass */
+.HospitalImageBanner {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+
+/* line 631, ../sass/style.sass */
+.HospitalImage-H-W {
+  height: 150px;
+  width: 100%;
+}
+
+/* line 634, ../sass/style.sass */
+.HospitalDetails {
+  padding: 0;
+}
+/* line 636, ../sass/style.sass */
+.HospitalDetails h4, .HospitalDetails p, .HospitalDetails [class^="col-md-12"] {
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+/* line 639, ../sass/style.sass */
+.HospitalDetails [class^="col-md-12"] {
+  padding: 0;
+  font-size: 12px;
+}
+/* line 643, ../sass/style.sass */
+.HospitalDetails [class^="col-md-12"] [class^="col-md-2"] {
+  color: #FF766C;
+  padding-right: 0;
+}
+/* line 646, ../sass/style.sass */
+.HospitalDetails [class^="col-md-12"] [class^="col-md-10"] {
+  color: gray;
+  padding-right: 0;
+}
+/* line 649, ../sass/style.sass */
+.HospitalDetails [class^="col-md-12"] [class^="col-md"] {
+  padding: 0;
+}
+
+/* line 651, ../sass/style.sass */
+.HospitalCertification {
+  padding: 7px;
+  margin-top: 10px;
+}
+/* line 655, ../sass/style.sass */
+.HospitalCertification img {
+  float: left;
+  padding-right: 4px;
+  cursor: pointer;
+}
+/* line 660, ../sass/style.sass */
+.HospitalCertification img:hover {
+  -webkit-filter: grayscale(0);
+}
+
+/* line 662, ../sass/style.sass */
+.HospitalRatings {
+  padding: 0;
+  padding-top: 5px;
+  min-height: 183px;
+  background: #e6e6e6;
+}
+
+/* line 667, ../sass/style.sass */
+.HospitalStarRating {
+  padding: 0;
+}
+/* line 669, ../sass/style.sass */
+.HospitalStarRating p {
+  line-height: 43px;
+  text-align: right;
+  right: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 675, ../sass/style.sass */
+.HospitalStarRating p:hover {
+  color: #FF766C;
+}
+/* line 677, ../sass/style.sass */
+.HospitalStarRating span {
+  font-size: 12px;
+  background-color: #FF920A;
+  color: #FFFFFF;
+  border-radius: 30px;
+  top: 5px;
+  right: 15px;
+  position: absolute;
+  height: 33px;
+  width: 31px;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+  background: url("../images/star.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-image: url("../images/star.png");
+}
+/* line 694, ../sass/style.sass */
+.HospitalStarRating span small {
+  line-height: 33px;
+}
+
+/* line 696, ../sass/style.sass */
+.HospitalPopupStar {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+/* line 700, ../sass/style.sass */
+.HospitalPopupStar i {
+  color: #FF920A;
+  float: right;
+}
+
+/* line 703, ../sass/style.sass */
+.HospitalButtons {
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 5px;
+  text-align: center;
+}
+/* line 708, ../sass/style.sass */
+.HospitalButtons span {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+  font-size: 16px;
+  padding: 5px;
+}
+/* line 715, ../sass/style.sass */
+.HospitalButtons span:last-child {
+  float: left;
+}
+/* line 717, ../sass/style.sass */
+.HospitalButtons span:hover {
+  color: #FF766C;
+}
+/* line 719, ../sass/style.sass */
+.HospitalButtons button {
+  font-size: 12px;
+}
+
+/* line 721, ../sass/style.sass */
+#HospitalModalBlock .modal-header {
+  border-bottom: none;
+}
+
+/* line 723, ../sass/style.sass */
+#HospitalModalBlock .modal-footer {
+  border-top: none;
+}
+
+/* End Hospital List */
+/* Sidebar */
+/* line 730, ../sass/style.sass */
+.SidebarResult [class^="col-md"] {
+  padding: 0;
+}
+/* line 732, ../sass/style.sass */
+.SidebarResult h4 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 736, ../sass/style.sass */
+.SidebarListResult {
+  margin-bottom: 20px;
+}
+
+/* line 739, ../sass/style.sass */
+.HospitalDetailsCompleteSummary i {
+  margin-right: 3px;
+}
+
+/* line 742, ../sass/style.sass */
+.CompareHospitalsBlockEmpanel .btn-default {
+  background: #4d4d4d;
+  border: transparent;
+  padding: 9px 30px;
+  color: #FFFFFF;
+}
+/* line 209, ../sass/style.sass */
+.CompareHospitalsBlockEmpanel .btn-default:hover {
+  color: #FFFFFF;
+  background: rgba(77, 77, 77, 0.8);
+}
+
+/* line 744, ../sass/style.sass */
+.CompareHospitalsBlock {
+  padding: 5px !important;
+  background-color: #FFFFFF;
+  margin-bottom: 5px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+/* line 750, ../sass/style.sass */
+.CompareHospitalsBlock .col-md-8 {
+  padding-left: 20px;
+}
+/* line 752, ../sass/style.sass */
+.CompareHospitalsBlock .btn-default {
+  background: #4d4d4d;
+  border: transparent;
+  padding: 9px 30px;
+  color: #FFFFFF;
+}
+/* line 209, ../sass/style.sass */
+.CompareHospitalsBlock .btn-default:hover {
+  color: #FFFFFF;
+  background: rgba(77, 77, 77, 0.8);
+}
+/* line 754, ../sass/style.sass */
+.CompareHospitalsBlock i {
+  color: #666666;
+}
+/* line 756, ../sass/style.sass */
+.CompareHospitalsBlock:hover {
+  border: 1px solid rgba(255, 118, 108, 0.3);
+}
+
+/* line 759, ../sass/style.sass */
+.SidebarListResultWithBorder {
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 20px !important;
+  border: 1px solid #cccccc;
+}
+/* line 764, ../sass/style.sass */
+.SidebarListResultWithBorder .col-md-12 {
+  padding-bottom: 15px;
+}
+/* line 766, ../sass/style.sass */
+.SidebarListResultWithBorder h5 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+/* line 769, ../sass/style.sass */
+.SidebarListResultWithBorder p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 2px;
+}
+/* line 773, ../sass/style.sass */
+.SidebarListResultWithBorder p i {
+  margin-right: 10px;
+  color: #4d4d4d;
+}
+/* line 776, ../sass/style.sass */
+.SidebarListResultWithBorder p a {
+  font-size: 11px;
+  text-decoration: underline;
+  line-height: 28px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: gray;
+  font-weight: bold;
+}
+/* line 784, ../sass/style.sass */
+.SidebarListResultWithBorder p a:hover {
+  color: #000000;
+}
+/* line 786, ../sass/style.sass */
+.SidebarListResultWithBorder span {
+  font-size: 12px;
+  color: gray;
+}
+/* line 789, ../sass/style.sass */
+.SidebarListResultWithBorder:hover {
+  border: 1px solid rgba(255, 118, 108, 0.3);
+}
+
+/* End Sidebar */
+/* End Result Page */
+/* Well */
+/* line 795, ../sass/style.sass */
+.well {
+  background: rgba(230, 230, 230, 0.3);
+  border: none;
+  box-shadow: none;
+}
+
+/* line 799, ../sass/style.sass */
+.well-lg {
+  border-radius: 0;
+}
+
+/* Pagination */
+/* line 804, ../sass/style.sass */
+.pagination li a {
+  color: #FF766C;
+}
+/* line 806, ../sass/style.sass */
+.pagination li a:hover {
+  color: #FF766C;
+}
+/* line 809, ../sass/style.sass */
+.pagination .active a {
+  background-color: #FF766C;
+  border-color: #FF766C;
+}
+/* line 812, ../sass/style.sass */
+.pagination .active a:hover {
+  background-color: rgba(255, 118, 108, 0.8);
+  border-color: rgba(255, 118, 108, 0.8);
+}
+
+/* Button */
+/* line 817, ../sass/style.sass */
+.btn-primary {
+  background-color: #FF766C !important;
+  border-color: #FF766C !important;
+}
+/* line 820, ../sass/style.sass */
+.btn-primary:hover {
+  background-color: rgba(255, 118, 108, 0.8) !important;
+  border-color: rgba(255, 118, 108, 0.8) !important;
+}
+/* line 823, ../sass/style.sass */
+.btn-primary:focus {
+  background-color: #FF766C;
+  border-color: #FF766C;
+}
+/* line 826, ../sass/style.sass */
+.btn-primary:active:hover {
+  background-color: #FF766C;
+  border-color: #FF766C;
+}
+
+/* Tabs */
+/* line 833, ../sass/style.sass */
+.nav-tabs > li > a {
+  color: #333333;
+  border-radius: 0;
+  border: none;
+}
+/* line 838, ../sass/style.sass */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  border: none;
+  border-bottom: 2px solid #FF766C;
+  color: #FF766C;
+}
+/* line 843, ../sass/style.sass */
+.nav-tabs > li > a:hover {
+  border: none;
+  border-bottom: 2px solid #FF766C;
+  color: #FF766C;
+  background: transparent;
+}
+
+/* Hospital Details */
+/* Hospital Main Header */
+/* line 857, ../sass/style.sass */
+.HospitalDetailsCompleteRatings b {
+  font-size: 20px;
+  color: #000000;
+}
+/* line 861, ../sass/style.sass */
+.HospitalDetailsCompleteRatings p i {
+  margin-right: 3px;
+}
+/* line 863, ../sass/style.sass */
+.HospitalDetailsCompleteRatings [class^="col-md-3"], .HospitalDetailsCompleteRatings [class^="col-md-6"] {
+  padding-right: 5px;
+}
+
+/* line 865, ../sass/style.sass */
+.RatingBar {
+  height: 20px;
+  background: #E6E6E6;
+  float: left;
+}
+
+/* line 869, ../sass/style.sass */
+.RatingBarFull {
+  background: #FF920A;
+  float: left;
+}
+
+/* line 872, ../sass/style.sass */
+.HospitalDetailsBodyHeader {
+  margin-bottom: 20px;
+  padding: 0;
+}
+/* line 875, ../sass/style.sass */
+.HospitalDetailsBodyHeader [class^="col-md-3"] {
+  padding: 0;
+}
+/* line 877, ../sass/style.sass */
+.HospitalDetailsBodyHeader i, .HospitalDetailsBodyHeader small {
+  margin-right: 10px;
+}
+
+/* line 887, ../sass/style.sass */
+.HospitalDetailsComplete {
+  padding: 0;
+}
+
+/* line 889, ../sass/style.sass */
+.HospitalDetailButtonsScroll {
+  background: none !important;
+  border: 0 !important;
+}
+/* line 892, ../sass/style.sass */
+.HospitalDetailButtonsScroll button {
+  background: #ff766c;
+  border: transparent;
+  padding: 9px 30px;
+  color: #FFFFFF;
+}
+/* line 209, ../sass/style.sass */
+.HospitalDetailButtonsScroll button:hover {
+  color: #FFFFFF;
+  background: rgba(255, 118, 108, 0.8);
+}
+/* line 894, ../sass/style.sass */
+.HospitalDetailButtonsScroll button:nth-child(2n+2) {
+  background: #7f5f5c;
+  border: transparent;
+  padding: 9px 30px;
+  color: #FFFFFF;
+}
+/* line 209, ../sass/style.sass */
+.HospitalDetailButtonsScroll button:nth-child(2n+2):hover {
+  color: #FFFFFF;
+  background: rgba(127, 95, 92, 0.8);
+}
+
+/* line 896, ../sass/style.sass */
+.HospitalDetailsComplete > .col-md-12 {
+  border: 1px solid #cccccc;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+/* line 902, ../sass/style.sass */
+.HospitalDetailsCompleteCertifications img {
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 908, ../sass/style.sass */
+.tab-pane > .col-md-12 {
+  padding: 20px;
+}
+
+/* line 912, ../sass/style.sass */
+#HospitalDetailsCompleteAbout p {
+  text-align: justify;
+}
+
+/* line 915, ../sass/style.sass */
+#HospitalDetailsCompleteFacilities i {
+  padding: 10px;
+  margin-right: 20px;
+  border: 1px solid #E6E6E6;
+}
+/* line 919, ../sass/style.sass */
+#HospitalDetailsCompleteFacilities span {
+  position: relative;
+  line-height: 37px;
+}
+
+/* line 923, ../sass/style.sass */
+#HospitalDetailsCompleteBranches [class^="col-md-6"] {
+  border: 1px solid #E6E6E6;
+  margin: 20px 0;
+}
+/* line 926, ../sass/style.sass */
+#HospitalDetailsCompleteBranches strong {
+  font-size: 18px;
+}
+
+/* line 933, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback button {
+  background: #4d4d4d;
+  border: transparent;
+  padding: 9px 30px;
+  color: #FFFFFF;
+  margin: 10px 0;
+  float: right;
+}
+/* line 209, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback button:hover {
+  color: #FFFFFF;
+  background: rgba(77, 77, 77, 0.8);
+}
+/* line 937, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback .media-left {
+  padding-right: 30px;
+}
+/* line 939, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback .media-left .media-object {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 15px;
+  border: 1px solid #E6E6E6;
+}
+/* line 944, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback .media-body {
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+}
+/* line 947, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback .media-body [class^="col-md"] {
+  padding: 0 0 5px 0;
+}
+/* line 950, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback .media-heading a {
+  color: #FF766C;
+  padding-right: 20px;
+}
+/* line 953, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback .media-heading a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 956, ../sass/style.sass */
+#HospitalDetailsCompletePatientFeedback .media-heading span {
+  font-size: 14px;
+}
+
+/* line 958, ../sass/style.sass */
+.PatientFeedback {
+  padding-bottom: 20px;
+}
+
+/* line 961, ../sass/style.sass */
+.ViewSpeciality a {
+  color: #FF766C;
+  cursor: pointer;
+}
+/* line 964, ../sass/style.sass */
+.ViewSpeciality a:hover {
+  text-decoration: none;
+  color: rgba(255, 118, 108, 0.7);
+}
+/* line 967, ../sass/style.sass */
+.ViewSpeciality a i {
+  margin-right: 5px;
+}
+
+/* line 969, ../sass/style.sass */
+.thumbnail {
+  border: none;
+  margin-bottom: 0;
+}
+/* line 972, ../sass/style.sass */
+.thumbnail img {
+  max-width: 70%;
+}
+/* line 974, ../sass/style.sass */
+.thumbnail .caption {
+  text-align: center;
+}
+
+/* line 976, ../sass/style.sass */
+.DoctorProfileHolder {
+  margin-top: 20px;
+  border-bottom: 1px solid #E6E6E6;
+}

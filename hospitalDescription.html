@@ -1,0 +1,753 @@
+
+<html>
+  <head>
+    <title>TREATIN | Check in here for the best medical treatment</title>
+    <!-- LATO Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic" type="text/css"/>
+    <!-- Material Icons Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css"/>
+    <!--7-strokes-->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css"/>
+    <!--Font Awesome icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <!--jQuery-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--Date Picker-->
+    <link rel="stylesheet" href="css/datepicker/bootstrap-datepicker.min.css"/>
+    <script src="js/datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- Flex Slider-->
+    <link rel="stylesheet" href="flexslider/css/flexslider.css"/>
+    <script src="flexslider/js/jquery.flexslider-min.js"></script>
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="css/animate.css"/>
+    <!--Custom CSS and JS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--link(rel="stylesheet", href="http://codepen.io/yuvraj/pen/PPyYmR.css")-->
+    <script src="js/script.js"></script>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+  </head>
+  <body style="background: #eee">
+    <!--Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top animate nav2">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><?xml version="1.0" encoding="utf-8" ?>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="135px" height="37.85px" viewBox="0 0 135 37.85" enable-background="new 0 0 135 37.85" xml:space="preserve">
+              <g>
+                <text transform="matrix(1 0 0 1 10.8447 21.9797)">
+                  <tspan x="0" y="0" font-family="'Arial'" font-size="25.6186">TREAT</tspan>
+                  <tspan x="83.974" y="0" opacity="0.5" font-family="'Arial'" font-size="25.6186">IN</tspan>
+                </text>
+                <text transform="matrix(1 0 0 1 0 35.6282)" font-family="'Arial'" font-size="6.8611">Check in here for the best medical treatment</text>
+              </g>
+            </svg></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a><i class="pe-7s-speaker"></i>
+                <p>Languages</p></a></li>
+            <li><a><i class="pe-7s-user"></i>
+                <p>My Account<b class="caret"></b></p></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End Navbar-->
+    <!--Header Section		-->
+    <header class="container-fluid HeaderSectionResult">
+      <div class="container-fluid SearchHolder">
+        <div class="container">
+          <div class="col-md-5 col-md-offset-1">
+            <input type="text" placeholder="Enter Speciality name" class="form-control input-lg"></input>
+          </div>
+          <div class="col-md-3">
+            <input type="text" placeholder="Enter city/locality/pincode" class="form-control input-lg"></input>
+          </div>
+          <div class="col-md-2">
+            <button type="button" class="btn btn-default btn-block">Search</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End Header Section-->
+    <!--Breadcrumbs-->
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active"><a href="#">Data</a></li>
+      </ol>
+    </div>
+    <!--End Breadcrumbs-->
+    <!--Hospital Details Body-->
+    <section class="container HospitalDetailsBody">
+      <div class="col-md-9 HospitalDetailsComplete">
+        <div class="col-md-12 HospitalDetailsBodyHeader">
+          <div class="col-md-9">
+            <h4>Apollo Hospital</h4>
+            <p><small><i class="fa fa-map-marker"> </i>No. 320, Anna Salai,Teynampet, Nandanam,Chennai 6100 035</small></p>
+            <p><small><i class="fa fa-envelope"></i>apollospeciality@apollohospitals.com</small><small><i class="fa fa-home"></i>www.apollohospitals.com</small><small><i class="fa fa-phone"></i>+91-44-2433 6119</small></p>
+          </div>
+          <div class="col-md-3"><br/>
+            <button class="btn btn-block btn-default">Talk to Hospital</button>
+            <button class="btn btn-block btn-default">Save Hospital</button>
+          </div>
+        </div>
+        <div style="padding:0px" class="container col-md-12 HospitalDetailButtonsScroll">
+          <button type="button" class="btn btn-default col-md-3">View Speciality</button>
+          <button type="button" class="btn btn-default col-md-3">View Surgeon</button>
+          <button type="button" class="btn btn-default col-md-3">Good to Know</button>
+          <button type="button" class="btn btn-default col-md-3">Awards and Excellence</button>
+        </div>
+        <div class="container col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#HospitalDetailsCompleteAbout">About</a></li>
+            <li><a data-toggle="tab" href="#HospitalDetailsCompleteFacilities">Facilities</a></li>
+            <li><a data-toggle="tab" href="#HospitalDetailsCompleteBranches">Branches</a></li>
+            <li><a data-toggle="tab" id="google-map-tab" href="#HospitalDetailsCompleteMapDirection">Map Direction</a></li>
+            <li><a data-toggle="tab" href="#HospitalDetailsCompletePatientFeedback">Patient Feedback</a></li>
+            <li><a data-toggle="tab" id="google-map-tab" href="#HospitalDetailsCompleteGallery">Gallery		</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="HospitalDetailsCompleteAbout" class="tab-pane fade in active">
+              <div class="col-md-12">								
+                <p>Apollo Hospitals was the forerunner of integrated healthcare in Asia, as well as globally. Today, the group's futuristic vision has ensured that it has been in a position of strength at every touch point of the healthcare delivery chain. Its presence encompasses over 10,000 beds across 64 hospitals, more than 2200 pharmacies, over 100 primary care & diagnostic clinics, 115 telemedicine units across 9 countries, health insurance services, global projects consultancy, 15 academic institutions and a Research Foundation with a focus on global clinical trials, epidemiological studies, stem-cell and genetic research.</p>
+                <p>Always pursuing Quality, our Hospital envisions more efficient, equitable care at all levels of a patient's experience. Through a consensus-based process, clinical quality and efficiency measures meets the needs and expectations of the general public, government, providers and practitioners.</p>
+              </div>
+            </div>
+            <div id="HospitalDetailsCompleteFacilities" class="tab-pane fade">
+              <div class="col-md-12">
+                <div class="col-md-4"><i class="material-icons">wifi</i><span>Wifi</span></div>
+                <div class="col-md-4"><i class="material-icons">directions_car</i><span>Car Parking</span></div>
+                <div class="col-md-4"><i class="material-icons">directions_bus</i><span>Shuttle Bus Service</span></div>
+                <div class="col-md-4"><i class="material-icons">restaurant_menu</i><span>Restaurant</span></div>
+                <div class="col-md-4"><i class="material-icons">face</i><span>SPA</span></div>
+                <div class="col-md-4"><i class="material-icons">accessibility</i><span>Fitness Center</span></div>
+              </div>
+            </div>
+            <div id="HospitalDetailsCompleteBranches" class="tab-pane fade">
+              <div class="col-md-12">
+                <div class="col-md-6">
+                  <h3>	Billroth Hospital</h3>
+                  <p> <span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></span><strong>5 </strong>of 5 <small>(234 reviews)</small></p>
+                  <p><i class="fa fa-map-marker"> </i>43, Lakshmi Talkies Road, Shenoy Nagar, Chennai- 30</p>
+                </div>
+                <div class="col-md-6">
+                  <h3>	Billroth Hospital</h3>
+                  <p> <span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></span><strong>5 </strong>of 5 <small>(234 reviews)</small></p>
+                  <p><i class="fa fa-map-marker"> </i>43, Lakshmi Talkies Road, Shenoy Nagar, Chennai- 30</p>
+                </div>
+                <div class="col-md-6">
+                  <h3>	Billroth Hospital</h3>
+                  <p> <span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></span><strong>5 </strong>of 5 <small>(234 reviews)</small></p>
+                  <p><i class="fa fa-map-marker"> </i>43, Lakshmi Talkies Road, Shenoy Nagar, Chennai- 30</p>
+                </div>
+                <div class="col-md-6">
+                  <h3>	Billroth Hospital</h3>
+                  <p> <span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></span><strong>5 </strong>of 5 <small>(234 reviews)</small></p>
+                  <p><i class="fa fa-map-marker"> </i>43, Lakshmi Talkies Road, Shenoy Nagar, Chennai- 30</p>
+                </div>
+              </div>
+            </div>
+            <div id="HospitalDetailsCompleteMapDirection" class="tab-pane fade">
+              <div class="col-md-12">
+                <h3>	Map Direction</h3>
+                <div id="map-canvas" style="width:100%; height:400px;"></div>
+              </div>
+            </div>
+            <div id="HospitalDetailsCompletePatientFeedback" class="tab-pane fade">
+              <div class="col-md-12">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-default">Write Review</button>
+                </div>
+                <div class="col-md-12 PatientFeedback">
+                  <div class="media">
+                    <div class="media-left"><a href="#"><img src="images/dr.png" alt="" class="media-object"></img></a></div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="#">Yuvaraj D</a><span>Palm Beach, FL<small>(240 reviews)</small></span></h4>
+                      <p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                      </p>
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      <div class="col-md-12">
+                        <div class="col-md-6">
+                          <div class="col-md-4">Sleep</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Clearness</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Location</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Rooms</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Service</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 PatientFeedback">
+                  <div class="media">
+                    <div class="media-left"><a href="#"><img src="images/dr.png" alt="" class="media-object"></img></a></div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="#">Yuvaraj D</a><span>Palm Beach, FL<small>(240 reviews)</small></span></h4>
+                      <p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                      </p>
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      <div class="col-md-12">
+                        <div class="col-md-6">
+                          <div class="col-md-4">Sleep</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Clearness</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Location</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Rooms</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Service</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 PatientFeedback">
+                  <div class="media">
+                    <div class="media-left"><a href="#"><img src="images/dr.png" alt="" class="media-object"></img></a></div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="#">Yuvaraj D</a><span>Palm Beach, FL<small>(240 reviews)</small></span></h4>
+                      <p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                      </p>
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      <div class="col-md-12">
+                        <div class="col-md-6">
+                          <div class="col-md-4">Sleep</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Clearness</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Location</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Rooms</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="col-md-4">Service</div>
+                          <div class="col-md-4"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-default">Write Review</button>
+                </div>
+              </div>
+            </div>
+            <div id="HospitalDetailsCompleteGallery" class="tab-pane fade">
+              <div class="col-md-12">
+                <div class="flexslider">
+                  <div class="slides">
+                    <li data-thumb="images/1.jpg"><img src="images/1.jpg"/></li>
+                    <li data-thumb="images/2.jpg"><img src="images/2.jpg"/></li>
+                    <li data-thumb="images/3.jpg"><img src="images/3.jpg"/></li>
+                    <li data-thumb="images/4.jpg"><img src="images/4.jpg"/></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 ViewSpeciality">
+          <div class="col-md-12">
+            <h4>View Speciality</h4>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>General Medicine</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>Tramacare</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>General Surgery</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>Cardiology</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>Urology</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>Orthopaedics</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>ENT</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>Gastroenterology</span></a></h5>
+            </div>
+            <div class="col-md-3">
+              <h5> <a data-toggle="popover" data-html="true" data-content="General Medicine&lt;br/&gt;Tramacare&lt;br/&gt;General Surgery&lt;br/&gt;Cardiology&lt;br/&gt;Urology&lt;br/&gt;Orthopaedics&lt;br/&gt;ENT&lt;br/&gt;Gastroenterology&lt;br/&gt;Neurology"><i class="fa fa-caret-right"></i><span>Neurology</span></a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 ViewSurgeons">
+          <div class="col-md-12">
+            <h4>View Surgeons</h4>
+            <div class="col-md-3 DoctorProfileHolder">
+              <div class="thumbnail"><img src="images/dr.png" alt="" class="img-circle"/>
+                <div class="caption">
+                  <h5><strong>Dr.Saravanan</strong></h5>
+                  <p><small>M.B.B.S - 23yr Exp</small></p>
+                  <p><small>Anchor Family Medicine</small></p>
+                  <p><a href="#" role="button" class="btn btn-primary">View Profile</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 DoctorProfileHolder">
+              <div class="thumbnail"><img src="images/dr.png" alt="" class="img-circle"/>
+                <div class="caption">
+                  <h5><strong>Dr.Ramesh</strong></h5>
+                  <p><small>M.B.B.S - 23yr Exp</small></p>
+                  <p><small>Anchor Family Medicine</small></p>
+                  <p><a href="#" role="button" class="btn btn-primary">View Profile</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 DoctorProfileHolder">
+              <div class="thumbnail"><img src="images/dr.png" alt="" class="img-circle"/>
+                <div class="caption">
+                  <h5><strong>Dr.Prakash</strong></h5>
+                  <p><small>M.B.B.S - 23yr Exp</small></p>
+                  <p><small>Anchor Family Medicine</small></p>
+                  <p><a href="#" role="button" class="btn btn-primary">View Profile</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 DoctorProfileHolder">
+              <div class="thumbnail"><img src="images/dr.png" alt="" class="img-circle"/>
+                <div class="caption">
+                  <h5><strong>Dr.Mohan</strong></h5>
+                  <p><small>M.B.B.S - 23yr Exp</small></p>
+                  <p><small>Anchor Family Medicine</small></p>
+                  <p><a href="#" role="button" class="btn btn-primary">View Profile</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <h4>Good to Know</h4>
+            <h5>Value Added Services</h5>
+            <ul>
+              <li>Apollo eDoc</li>
+              <li>Apollo Sugar Clinic</li>
+              <li>Apollo Telemedicine</li>
+              <li>Virtual ICU Visit</li>
+              <li>Apollo Lifeline</li>
+              <li>Sunshine Store</li>
+              <li>Apollo - Aircel Mobile Health Care</li>
+              <li>B Positive</li>
+              <li>Apollo WHITE Dental Spa</li>
+              <li>The Healing Card</li>
+              <li>Blood Connections</li>
+              <li>Apollo Prism</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <h4>Awards & Accolades</h4>
+            <div class="col-md-12">
+              <h4 class="well">Group Award</h4>
+              <ul>
+                <li class="col-md-6">Hospital Management Asia Awards</li>
+                <li class="col-md-6">I.C.O.N.I.C IDC Insights Award</li>
+                <li class="col-md-6">The Week-Nielsen Hospital Award 2013</li>
+                <li class="col-md-6">SKOCH order of Merit Award</li>
+                <li class="col-md-6">All India Management Association</li>
+                <li class="col-md-6">Asian Learning and Development Leadership Award</li>
+                <li class="col-md-6">CMO Asia Award</li>
+                <li class="col-md-6">Golden Peacock Occupational Health &amp; Safety Award</li>
+                <li class="col-md-6">Gallup Great Workplace Award</li>
+                <li class="col-md-6">International Medical Tourism Award 2014</li>
+                <li class="col-md-6">ISO Certification</li>
+                <li class="col-md-6">Asia HRD Awards 2013</li>
+                <li class="col-md-6">Apollo Health Insurance Munich Awards</li>
+                <li class="col-md-6">IT Excellence</li>
+                <li class="col-md-6">Child Magazine Award</li>
+                <li class="col-md-6">Best Medical Tourism India Award</li>
+                <li class="col-md-6">ICICI Lombard &amp; CNBC TV18 India Healthcare Awards</li>
+                <li class="col-md-6">Best Hospitals in India - Survey 2012 by &quot;The Week&quot; Magazine</li>
+                <li class="col-md-6">Enterprise Asias AREA Program, South Asia 2012 - &quot;Health Promotion&quot; Award</li>
+                <li class="col-md-6">Porter Prize &quot;Institute for Competitiveness&quot; Mini Strategy Award</li>
+              </ul>
+            </div>
+            <div class="col-md-12">
+              <h4 class="well">Group Award</h4>
+              <ul>
+                <li class="col-md-6">Hospital Management Asia Awards</li>
+                <li class="col-md-6">I.C.O.N.I.C IDC Insights Award</li>
+                <li class="col-md-6">The Week-Nielsen Hospital Award 2013</li>
+                <li class="col-md-6">SKOCH order of Merit Award</li>
+                <li class="col-md-6">All India Management Association</li>
+                <li class="col-md-6">Asian Learning and Development Leadership Award</li>
+                <li class="col-md-6">CMO Asia Award</li>
+                <li class="col-md-6">Golden Peacock Occupational Health &amp; Safety Award</li>
+                <li class="col-md-6">Gallup Great Workplace Award</li>
+                <li class="col-md-6">International Medical Tourism Award 2014</li>
+                <li class="col-md-6">ISO Certification</li>
+                <li class="col-md-6">Asia HRD Awards 2013</li>
+                <li class="col-md-6">Apollo Health Insurance Munich Awards</li>
+                <li class="col-md-6">IT Excellence</li>
+                <li class="col-md-6">Child Magazine Award</li>
+                <li class="col-md-6">Best Medical Tourism India Award</li>
+                <li class="col-md-6">ICICI Lombard &amp; CNBC TV18 India Healthcare Awards</li>
+                <li class="col-md-6">Best Hospitals in India - Survey 2012 by &quot;The Week&quot; Magazine</li>
+                <li class="col-md-6">Enterprise Asias AREA Program, South Asia 2012 - &quot;Health Promotion&quot; Award</li>
+                <li class="col-md-6">Porter Prize &quot;Institute for Competitiveness&quot; Mini Strategy Award</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <h4>Write a Review</h4>
+            <div class="col-md-8">
+              <div class="form-group">
+                <label for="TxtUsername">Review Title</label>
+                <input type="text" id="TxtUsername" name="TxtUsername" placeholder="Username" class="form-control"></input>
+              </div>
+              <div class="form-group"></div>
+              <label for="TxtReview">Review Text</label>
+              <textarea rows="3" id="TxtReview" placeholder="Write your review" class="form-control"></textarea>
+              <div class="form-group"></div>
+              <button type="button" class="btn btn-default btn-primary">Submit Review</button>
+            </div>
+            <div class="col-md-4">
+              <div class="col-md-12">
+                <h5><strong>Ratings</strong></h5>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Services</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Accomadation</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Cleanlines</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Maintenance</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Services</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Accomadation</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Cleanlines</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">Maintenance</div>
+                <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+                </div>
+              </div>
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Sidebar-->
+      <div class="col-md-3 SidebarResult">
+        <!--Sidebar List Result-->
+        <div class="container col-md-12 SidebarListResultWithBorder HospitalDetailsCompleteRatings">
+          <button class="btn btn-primary btn-block">Write Review</button>
+          <h3> <strong>Exceptional!</strong></h3>
+          <h4>97%<small>of guests recommend</small></h4>
+          <p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><span><b> 4.7</b>of 5 <small>guest rating</small></span>
+          </p>
+          <p><small>based on 1234 reviews</small></p>
+        </div>
+        <div class="container col-md-12 SidebarListResultWithBorder HospitalDetailsCompletePatientRatings">
+          <h5> <strong>Patient Rating</strong></h5>
+          <div class="col-md-12">
+            <div class="col-md-3"> <small>Excellent </small></div>
+            <div class="col-md-7 RatingBar"> 
+              <div style="width:91%;" class="RatingBarFull">&nbsp;</div>
+            </div>
+            <div class="col-md-2"> <small>1254</small></div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-3"> <small>Good </small></div>
+            <div class="col-md-7 RatingBar"> 
+              <div style="width:60%;" class="RatingBarFull">&nbsp;</div>
+            </div>
+            <div class="col-md-2"><small>242</small></div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-3"> <small>Average </small></div>
+            <div class="col-md-7 RatingBar"> 
+              <div style="width:40%;" class="RatingBarFull">&nbsp;</div>
+            </div>
+            <div class="col-md-2"> <small>89</small></div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-3"> <small>Poor </small></div>
+            <div class="col-md-7 RatingBar"> 
+              <div style="width:10%;" class="RatingBarFull">&nbsp;</div>
+            </div>
+            <div class="col-md-2"> <small>20</small></div>
+          </div>
+        </div>
+        <div class="container col-md-12 SidebarListResultWithBorder HospitalDetailsCompleteSummary">
+          <h5> <strong>Summary</strong></h5>
+          <div class="col-md-12">
+            <div class="col-md-6">Safety</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">Clinical Quality</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">Doctor Response</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">Staff Response</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">Staff Knowledge</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">Cleanliness</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">Timely care</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">Effective care</div>
+            <div class="col-md-6"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container col-md-12 SidebarListResult">
+          <h4>Compare Hospitals</h4>
+          <div class="col-md-12 CompareHospitalsBlock">						
+            <div class="col-md-4"><img src="images/apollo-hospital.jpg" class="img-responsive"></img></div>
+            <div class="col-md-8">
+              <h5> Apollo Hospital</h5>
+              <p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 CompareHospitalsBlock">						
+            <div class="col-md-4"><img src="images/apollo-hospital.jpg" class="img-responsive"></img></div>
+            <div class="col-md-8">
+              <h5> Apollo Hospital</h5>
+              <p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 CompareHospitalsBlock">						
+            <div class="col-md-4"><img src="images/apollo-hospital.jpg" class="img-responsive"></img></div>
+            <div class="col-md-8">
+              <h5> Apollo Hospital</h5>
+              <p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 CompareHospitalsBlock">
+            <button class="btn btn-default btn-block">Compare Now</button>
+          </div>
+        </div>
+        <div class="container col-md-12 SidebarListResultWithBorder">
+          <h5> <strong>WHY USE TREATIN !</strong></h5>
+          <div class="col-md-12">
+            <p><i class="glyphicon glyphicon-star"></i>Best Price Guaranteed
+            </p><span>Low rates</span>
+          </div>
+          <div class="col-md-12">
+            <p><i class="glyphicon glyphicon-star"></i>Verified reviews
+            </p><span>We verify all reviews</span>
+          </div>
+          <div class="col-md-12">
+            <p><i class="glyphicon glyphicon-star"></i>Make changes to your
+            </p><span>We verify all reviews</span>
+          </div>
+        </div>
+        <div class="container col-md-12 SidebarListResultWithBorder">
+          <h5> <strong>Support Services !</strong></h5>
+          <div class="col-md-12">
+            <p><a>FIND HEALTH CARE FACILITATOR</a></p>
+            <p><a>FIND SERVICED APARTMENTS</a></p>
+            <p><a>FIND LOCAL TRAVEL / TAXI SERVICE</a></p>
+            <p><a>HOME HEALTHCARE SERVICES</a></p>
+            <p><a>FIND LOCAL TRANSLATOR SERVICES</a></p>
+            <p><a>FIND HOLIDAY & TOURIST SERVICES</a></p>
+          </div>
+        </div>
+        <!--End Sidebar List Result-->
+      </div>
+    </section>
+    <!--End Hospital Details Body-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <!-- Footers-->
+    <footer class="container-fluid">
+      <div class="container FooterHeadings">
+        <div class="col-md-2"> <span>PRODUCT OFFERING</span></div>
+        <div class="col-md-2"> <span>TREATIN</span></div>
+        <div class="col-md-2"> <span>ABOUT THE SITE</span></div>
+        <div class="col-md-2"> <span>PARTNER PROGRAMS</span></div>
+        <div class="col-md-2"> <span>MORE LINKS</span></div>
+        <div class="col-md-2"> <span>FOLLOW US</span></div>
+      </div>
+      <div class="container">
+        <div class="col-md-2">
+          <ul>
+            <li><a href="#">Find best hospitals / treatments</a></li>
+            <li><a href="#">Find Healthcare Facilitator</a></li>
+            <li><a href="#">Consult a doctor</a></li>
+            <li><a href="#">Telemedicine solution</a></li>
+            <li><a href="#">Find A Tourist Provider</a></li>
+            <li><a href="#">Find Insurance Provider</a></li>
+            <li><a href="#">Find a foreign exchange dealer</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Social Responsibility</a></li>
+            <li><a href="#">Healthcare community</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Complaints</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Payment Security</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">User Agreement</a></li>
+            <li><a href="#">Other Offices</a></li>
+            <li><a href="#">Make A Payment</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <li><a href="#">Are you a Healthcare Facilitator</a></li>
+            <li><a href="#">Are you a Tourist operator</a></li>
+            <li><a href="#">Are you a Translator</a></li>
+            <li><a href="#">Are you a Insurance provider</a></li>
+            <li><a href="#">Are you a foreign exchange dealer</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <li><a href="#">Links to other health related sites</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="FooterLogo"><?xml version="1.0" encoding="utf-8" ?>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="135px" height="37.85px" viewBox="0 0 135 37.85" enable-background="new 0 0 135 37.85" xml:space="preserve">
+              <g>
+                <text transform="matrix(1 0 0 1 10.8447 21.9797)">
+                  <tspan x="0" y="0" font-family="'Arial'" font-size="25.6186">TREAT</tspan>
+                  <tspan x="83.974" y="0" opacity="0.5" font-family="'Arial'" font-size="25.6186">IN</tspan>
+                </text>
+                <text transform="matrix(1 0 0 1 0 35.6282)" font-family="'Arial'" font-size="6.8611">Check in here for the best medical treatment</text>
+              </g>
+            </svg>
+          </div>
+          <address>
+            <p>VISTARA Healthcare</p><span>No:69, McNichols Road, Chetpet, Chennai - 600031. India</span>
+          </address>
+          <address>
+            <p>ONE Healthcare</p><span>1200 Smith St #1600, Houston, TX 77002, United States</span>
+          </address>
+          <ul class="social">
+            <li><a class="fa fa-facebook"></a></li>
+            <li><a class="fa fa-twitter"></a></li>
+            <li><a class="fa fa-google-plus"></a></li>
+            <li><a class="fa fa-linkedin"></a></li>
+            <li><a class="fa fa-pinterest"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer-->
+  </body>
+</html>
