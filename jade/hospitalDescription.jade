@@ -35,7 +35,7 @@ html
 		section.container.HospitalDetailsBody
 			.col-md-9.HospitalDetailsComplete
 				.col-md-12.HospitalDetailsBodyHeader
-					.col-md-9
+					.col-md-7
 						h4 Apollo Hospital
 						p
 							small
@@ -45,20 +45,36 @@ html
 							small
 								i.fa.fa-envelope
 								| apollospeciality@apollohospitals.com
+						p
 							small
 								i.fa.fa-home
 								| www.apollohospitals.com
 							small
 								i.fa.fa-phone
 								| +91-44-2433 6119
-					.col-md-3
+						
+					.col-md-5
+							.HospitalCertification.col-md-12
+								//- img.img-responsive(src="images/hospitalStandards/New Folder/aaahc.png" data-toggle="popover" data-content="AAAHC")
+								//- img.img-responsive(src="images/hospitalStandards/New Folder/dnv.png" data-toggle="popover" data-content="DNV")
+								//- img.img-responsive(src="images/hospitalStandards/New Folder/jci.png" data-toggle="popover" data-content="JCI")
+								img.img-responsive(src="images/hospitalStandards/aaahc.png" data-toggle="popover" data-content="AAAHC")
+								img.img-responsive(src="images/hospitalStandards/dnv.png" data-toggle="popover" data-content="DNV")
+								img.img-responsive(src="images/hospitalStandards/jci.png" data-toggle="popover" data-content="JCI")
 							br/
-							button.btn.btn-block.btn-default Talk to Hospital
-							button.btn.btn-block.btn-default Save Hospital
+							br/
+							button.icon-btn.btn.btn-default.btn-primary
+								span.glyphicon.btn-glyphicon.glyphicon-heart.img-circle.text-muted
+								| Save Hospital
+							button.icon-btn.btn.btn-default.btn-primary
+								span.glyphicon.btn-glyphicon.glyphicon-earphone.img-circle.text-muted
+								| Talk to Hospital	
+					.col-md-12
+						
 				.container.col-md-12(style="padding:0px").HospitalDetailButtonsScroll
 						- var ButtonsScroll = ['View Speciality', 'View Surgeon', 'Good to Know', 'Awards and Excellence']
 						- each item in ButtonsScroll
-							button.btn.btn-default.col-md-3(type="button")= item
+							button.btn.btn-default.col-md-2(type="button")= item
 				.container.col-md-12
 					ul.nav.nav-tabs
 						li.active

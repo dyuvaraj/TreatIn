@@ -40,6 +40,13 @@ $PrimaryColor: $Peach
 .btn, .dropdown-menu
 	border-radius: 0
 
+.btn-glyphicon
+	padding: 8px
+	background: rgba($White, 0.7)
+	margin-right: 4px
+.icon-btn
+	padding: 1px 15px 3px 2px
+	border-radius: 50px
 input[type="button"], button
 	@extend .animateFaster
 input[type="text"]:hover, input[type="button"]:hover
@@ -257,7 +264,7 @@ body
 		padding: 10px 0
 	@include HeaderSearchHolder(rgba($White, 0), $PrimaryColor)
 	h3
-		margin-bottom: 50px
+		margin-bottom: 25px
 .specialBtn
 	background-color: $PrimaryColor !important
 	border: 1px solid $PrimaryColor !important
@@ -588,6 +595,11 @@ footer
 		font-size: 12px
 		padding: 5px 0
 		margin: 0
+	.tooltip.top .tooltip-arrow
+		border-top-color: $White
+	.tooltip-inner
+		color: $Black
+		background-color: $White
 .HospitalListOverlay
 	height: 150px
 	width: 100%
@@ -718,6 +730,13 @@ footer
 			color: $PrimaryColor
 	button
 		font-size: 12px
+		border: 1px solid rgba($PrimaryColor, 0) !important
+		background: transparent !important
+		color: rgba($Blue, 1)
+		&:hover
+			border: 1px solid rgba($Blue, 0) !important
+			background: rgba($Blue, 1) !important
+			color: $White
 #HospitalModalBlock .modal-header
 	border-bottom: none
 #HospitalModalBlock .modal-footer
@@ -872,10 +891,20 @@ footer
 .HospitalDetailsBodyHeader
 	margin-bottom: 20px
 	padding: 0
-	[class^="col-md-3"]
+	[class^="col-md-5"]
+		text-align: right
 		padding: 0
+		button
+			font-size: 12px
+			margin: 0 10px 10px 0
+			bottom: 0
+		.HospitalCertification
+			img
+				float: right
+				margin-bottom: 30px
 	i, small
 		margin-right: 10px
+
 
 // .HospitalDetailsComplete
 // 	[class^="col-md-12"]
@@ -891,6 +920,9 @@ footer
 	border: 0 !important
 	button
 		@include DefaultButton(lighten($PrimaryColor, 0))
+		font-size: 12px
+		width: auto
+		margin-right: 10px
 		&:nth-child(2n+2)
 			@include DefaultButton(lighten(#7F5F5C, 0))
 .HospitalDetailsComplete > .col-md-12
